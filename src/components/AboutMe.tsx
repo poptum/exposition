@@ -30,7 +30,25 @@ export default function AboutMe({ image, text, alt = "About Me" }: AboutMeProps)
             Sobre A Bella
           </h2>
           <p className="text-lg text-gray-600 leading-relaxed">
-            {text}
+          Uma pessoa boa demais para o mundo <br />
+           Gentil a ponto de se doar sem medida <br />
+           Mais gostosa que o melhor cheesecake <br />
+           Com um sorriso que ilumina dias nublados <br /> 
+
+          </p>
+          <p className="text-lg text-gray-600 leading-relaxed">
+          Artística de alma <br />
+          Engraçada sem esforço <br />
+          Mágica sem saber <br />
+          Capaz de conjurar grandes feitiços usando apenas uvas. <br />
+
+
+          </p>
+          <p className="text-lg text-gray-600 leading-relaxed">
+          A mulher da minha vida. <br />
+          Incrível. Completa. Suficiente. <br />
+          Desejo apenas que ela enxergue e aceite tudo que ela é. <br />
+
           </p>
           <div className="pt-4">
             <button className="bg-blue-600 hover:bg-blue-700 cursor-pointer text-white font-semibold py-3 px-6 rounded-lg transition-all duration-300 transform hover:scale-105 shadow-md hover:shadow-lg"

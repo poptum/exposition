@@ -1,36 +1,148 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Isabella Miquelanti - Nutricionista
 
-## Getting Started
+Website profissional da nutricionista Isabella Miquelanti, especializada em alimentação materno-infantil em Belo Horizonte.
 
-First, run the development server:
+## 🚀 Funcionalidades
 
+- **Página Inicial**: Apresentação profissional e serviços
+- **Sobre**: Informações sobre formação e especialidades
+- **Serviços**: Detalhamento das especialidades (Reeducação Alimentar, APLV, Autismo)
+- **Contato**: Formulário de contato e informações
+- **Agendamento**: Sistema de agendamento de consultas
+- **Receitas**: Receitas nutritivas e dicas nutricionais
+
+## 🛠️ Tecnologias
+
+- **Frontend**: Next.js 15, React 19, TypeScript
+- **Styling**: Tailwind CSS 4
+- **Deploy**: Vercel (recomendado)
+- **SEO**: Otimizado com metadados, Open Graph, e Schema.org
+
+## 📱 Responsividade
+
+- Design mobile-first
+- Componentes responsivos
+- PWA ready com manifest.json
+- Imagens otimizadas para diferentes dispositivos
+
+## 🔍 SEO Implementado
+
+### Metadados
+- Títulos e descrições otimizados para cada página
+- Palavras-chave relevantes para nutrição materno-infantil
+- Open Graph tags para redes sociais
+- Twitter Cards para compartilhamento
+
+### Estrutura Semântica
+- HTML5 semântico com `<main>`, `<section>`, `<article>`
+- Hierarquia de cabeçalhos (H1, H2, H3) adequada
+- Atributos ARIA para acessibilidade
+- Schema.org markup para rich snippets
+
+### Performance
+- Imagens otimizadas com Next.js Image
+- Lazy loading automático
+- Formato WebP/AVIF para imagens
+- Compressão e minificação habilitadas
+
+### Arquivos Técnicos
+- `robots.txt` para controle de crawlers
+- `sitemap.xml` para indexação
+- `manifest.json` para PWA
+- Meta tags para verificação Google
+
+## 🚀 Como Executar
+
+### Desenvolvimento
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Build de Produção
+```bash
+npm run build
+npm start
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 📊 Monitoramento SEO
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Ferramentas Recomendadas
+- **Google Search Console**: Monitoramento de indexação
+- **Google Analytics**: Análise de tráfego
+- **PageSpeed Insights**: Performance e Core Web Vitals
+- **Schema.org Validator**: Validação de markup estruturado
 
-## Learn More
+### Métricas Importantes
+- **Core Web Vitals**: LCP, FID, CLS
+- **Mobile Usability**: Responsividade e usabilidade
+- **Page Speed**: Tempo de carregamento
+- **SEO Score**: Pontuação geral de SEO
 
-To learn more about Next.js, take a look at the following resources:
+## 🔧 Configurações SEO
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Variáveis de Ambiente
+```env
+NEXT_PUBLIC_SITE_URL=https://isabellamiquelanti.com.br
+GOOGLE_ANALYTICS_ID=GA_MEASUREMENT_ID
+GOOGLE_VERIFICATION_CODE=verification_code
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Personalizações Necessárias
+1. **URLs**: Atualizar `metadataBase` no layout.tsx
+2. **Verificação Google**: Adicionar código de verificação
+3. **Analytics**: Configurar Google Analytics
+4. **Redes Sociais**: Atualizar links no Schema.org
 
-## Deploy on Vercel
+## 📈 Estratégias de SEO
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Conteúdo
+- **Palavras-chave**: Foco em termos locais (Belo Horizonte, MG)
+- **Long-tail**: "nutricionista materno-infantil BH"
+- **Conteúdo E-A-T**: Expertise, Authoritativeness, Trustworthiness
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### Local SEO
+- **Google My Business**: Configuração completa
+- **Endereço**: Incluído no Schema.org
+- **Horários**: Especificados no markup
+- **Serviços**: Listados com descrições
+
+### Link Building
+- **Internos**: Navegação entre páginas
+- **Externos**: Parcerias com profissionais de saúde
+- **Locais**: Diretórios de Belo Horizonte
+
+## 🎯 Próximos Passos
+
+### Melhorias de SEO
+- [ ] Implementar blog com artigos nutricionais
+- [ ] Adicionar sistema de comentários
+- [ ] Criar páginas de serviço individuais
+- [ ] Implementar breadcrumbs
+- [ ] Adicionar FAQ estruturado
+
+### Performance
+- [ ] Implementar cache de imagens
+- [ ] Adicionar service worker
+- [ ] Otimizar fontes web
+- [ ] Implementar lazy loading avançado
+
+### Analytics
+- [ ] Configurar eventos personalizados
+- [ ] Implementar conversões
+- [ ] Rastrear formulários
+- [ ] Análise de comportamento do usuário
+
+## 📞 Suporte
+
+Para dúvidas técnicas ou suporte SEO:
+- **Email**: contato@isabellamiquelanti.com.br
+- **Desenvolvedor**: [Seu Nome/Contato]
+
+## 📄 Licença
+
+Este projeto é privado e desenvolvido especificamente para Isabella Miquelanti.
+
+---
+
+**Nota**: Este projeto está otimizado para SEO e performance, seguindo as melhores práticas do Next.js e padrões web modernos.

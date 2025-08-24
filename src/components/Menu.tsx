@@ -17,10 +17,9 @@ export default function Menu() {
 
   const menuItems = [
     { href: '/', label: 'Home' },
-    { href: '/about', label: 'About' },
-    { href: '/services', label: 'Services' },
+    { href: '/booking', label: 'Booking' },
     { href: '/contact', label: 'Contact' },
-    { href: '/blog', label: 'Blog' },
+    { href: '/recipes', label: 'Recipes' },
   ];
 
   return (
