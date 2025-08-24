@@ -9,7 +9,7 @@ interface AboutMeProps {
 
 export default function AboutMe({ image, text, alt = "About Me" }: AboutMeProps) {
   return (
-    <div className="bg-white rounded-2xl shadow-xl p-8 md:p-12">
+    <div className="bg-white rounded-2xl md:shadow-xl py-8 md:px-8 md:mt-4 md:p-12">
       <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
         {/* Image Section */}
         <div className="flex justify-center md:justify-start">

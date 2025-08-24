@@ -5,25 +5,25 @@ import AboutMe from "@/components/AboutMe";
 
 export default function Home() {
   return (
-    <div className="relative  overflow-hidden">
+    <div className="relative overflow-hidden">
       {/* Menu Component */}
       <Menu />
 
       {/* Main Content */}
-      <div className="relative z-10 py-10 flex items-center bg-green-800/5 ">
+      <div className=" relative z-10 md:py-10 flex items-center ">
 
-        <div className="container mx-auto flex flex-col md:flex-row items-center justify-around">
+        <div className="container hidden md:flex mx-auto flex flex-col md:flex-row items-center justify-around bg-green-800/5 ">
 
-          <div className="max-w-2xl">
+          <div className="max-w-2xl flex flex-col justify-center align-center items-center">
             {/* Main Heading */}
             <h1 className="text-5xl md:text-7xl font-bold  mb-6 leading-tight">
-              <span className="block ">Isabella Miquellanti</span>
+              <span className="block ">Isabella Miquelanti</span>
             </h1>
 
-            <p className="text-2xl  mb-6 leading-relaxed max-w-xl">
-              Nutricionista especializada em alimentação infantil atuando em Belo Horizonte-MG
+            <p className="text-xl   mb-6 leading-relaxed max-w-xl">
+              Nutricionista especializada em alimentação materno-infantil situada em Belo Horizonte-MG
             </p> 
-            <p className="text-2xl  mb-6 leading-relaxed max-w-xl">
+            <p className="text-2xl   mb-6 leading-relaxed max-w-xl">
               Trazendo amor e cuidado para a saúde da sua família
             </p> 
 
@@ -32,37 +32,58 @@ export default function Home() {
           <div className="flex justify-center">
             <Image 
               src="/love.jpg" 
-              alt="Nutri Bella Miquellanti" 
+              alt="Nutri Bella Miquelanti" 
               width={500} 
               height={300} 
               className="rounded-lg object-cover w-full max-w-md"
             />
           </div>
         </div>
+        {/* Mobile introductionView */}
+        <div className="container flex justify-center md:hidden">
+          <div className="relative w-full max-w-md h-80 rounded-lg overflow-hidden">
+            <Image 
+              src="/love.jpg" 
+              alt="Nutri Bella Miquelanti" 
+              fill
+              className="object-cover"
+            />
+            <div className="absolute inset-0 bg-black/40 flex items-end justify-end">
+              <div className="text-center text-white p-6">
+                <h2 className="text-2xl font-bold mb-3">Isabella Miquelanti</h2>
+                <p className="text-sm leading-relaxed">
+                  Nutricionista especializada em alimentação materno-infantil
+                </p>
+
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
 
       {/* About Me Section */}
-      <div className="relative z-10 bg-white py-20">
+      <div className="relative z-10 bg-white pb-5">
         <div className="container mx-auto px-8">
           <AboutMe
             image="/love2.jpg"
-            text="Nutricionista especializada em nutrição infantil com formação pela Universidade Federal de Minas Gerais (UFMG). Atuando em Belo Horizonte, minha missão é promover a saúde e o bem-estar desde os primeiros anos de vida através de um acompanhamento nutricional humanizado, baseado em ciência e empatia. Com uma abordagem acolhedora e individualizada, auxilio famílias na construção de hábitos alimentares saudáveis e sustentáveis para crianças e adolescentes. Meu compromisso com a qualidade do atendimento e a constante atualização profissional refletem-se na confiança de meus pacientes e suas famílias."
-            alt="Nutri Bella Miquellanti"
+            text="Nutricionista especializada em nutrição materno-infantil, formada pela Universidade Federal de Minas Gerais (UFMG). Atuando em Belo Horizonte, minha missão é promover a saúde e o bem-estar desde os primeiros anos de vida através de um acompanhamento nutricional humanizado, baseado em ciência e empatia. Com uma abordagem acolhedora e individualizada, auxilio famílias na construção de hábitos alimentares saudáveis e sustentáveis para crianças e adolescentes. Meu compromisso com a qualidade do atendimento e a constante atualização profissional refletem-se na confiança de meus pacientes e suas famílias."
+            alt="Nutri Bella Miquelanti"
           />
         </div>
       </div>
 
       {/* Infinite Scroll Section */}
-      <div className="relative z-10 bg-white">
-        <div className="container mx-auto px-8 py-20">
-          <h2 className="text-4xl font-bold text-center text-gray-800 mb-16">
-            Especialidades
-          </h2>
-          
+      <div className="relative z-10 ">
+        <div className="container mx-auto">
+
           {/* Infinite scroll content */}
-          <div className="space-y-20">
+          <div className="space-y-10 md:space-y-20 bg-green-800/5 px-8 py-4 md:py-8">
             {/* Section 1 */}
-            <div className="grid md:grid-cols-2 gap-12 items-center">
+            {/* <h2 className="text-4xl font-bold text-center text-gray-800 mb-8">
+            Especialidades
+          </h2> */}
+          
+            <div className="grid md:grid-cols-2 gap-6 md:gap-12 items-center">
               <div>
                 <h3 className="text-3xl font-bold text-gray-800 mb-6">
                   Reeducação Alimentar
@@ -126,31 +147,34 @@ export default function Home() {
           </div>
 
           {/* Testimonials Section */}
-          <div className="mt-20">
+          <div className="mt-4 md:mt-20 px-8">
             <h3 className="text-3xl font-bold text-gray-800 mb-8 text-center">
               Depoimentos dos Pacientes
             </h3>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 justify-items-center">
               <Testimonial
-                image="/logo.png"
-                text="A Nutri Bella transformou a alimentação da minha filha. Sua abordagem carinhosa e profissional fez toda a diferença no nosso dia a dia."
-                alt="Mãe de paciente"
+                image="/andre.jpeg"
+                text="Você me faz mais feliz, me faz dormir melhor, me deixa mais tranquilo durante a semana, me dá motivos para anseiar os feriados. A minha maior sorte foi te conhecer e o meu maior prazer vai ser crescer ao seu lado. Te amo, muito mais"
+                name="Andre Muniz"
+                alt="Andre Muniz"
               />
               <Testimonial
-                image="/logo.png"
-                text="Excelente profissional! Conseguiu resolver os problemas alimentares do meu filho com autismo de forma muito eficaz e respeitosa."
-                alt="Pai de paciente"
+                image="/cool_cat.jpeg"
+                text="THE hottest nutritionist i've ever seen, too bad she's already taken. 10/10 would recommend"
+                name="Andrew Javier"
+                alt="Andrew Javier"
               />
               <Testimonial
-                image="/logo.png"
-                text="Recomendo muito! Bella é uma nutricionista excepcional que realmente se importa com o bem-estar das crianças e suas famílias."
-                alt="Família de paciente"
+                image="/waterfall_andre.jpeg"
+                text="Eu nunca tive tanta certeza de algo, como a certeza de que eu te amo, seja na cidade ou no campo, nas montanhas ou no mar, se eu tiver você, eu terei tudo que eu preciso	"
+                name="Erdna Zinum"
+                alt="Erdna Zinum"
               />
             </div>
           </div>
 
           {/* Final CTA Section */}
-          <div className="text-center mt-20 py-16 bg-gray-50 rounded-2xl">
+          <div className="text-center mt-4 md:mt-20 py-16 bg-gray-50 rounded-2xl bg-green-800/5 px-8">
             <h3 className="text-3xl font-bold text-gray-800 mb-6">
               Gostaria de conversar com a Nutri ?
             </h3>

@@ -69,8 +69,8 @@ export default function Menu() {
           <div className="flex items-center justify-between h-16">
             {/* Logo */}
             <div className="flex-shrink-0">
-              <Link href="/" className="text-xl font-bold text-blue-600">
-                Logo
+            <Link href="/" className="text-2xl font-bold text-blue-600">
+                <Image src="/logo.png" alt="Logo" width={60} height={60} />
               </Link>
             </div>
 
