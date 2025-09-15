@@ -54,7 +54,7 @@ export default function Home() {
               <div className="text-center text-white p-6">
                 <h2 className="text-2xl font-bold mb-3">Isabella Miquelanti</h2>
                 <p className="text-sm leading-relaxed">
-                  Nutricionista especializada em alimentação materno-infantil
+                  Nutricionista especializada em alimentação materno infantil
                 </p>
 
               </div>
